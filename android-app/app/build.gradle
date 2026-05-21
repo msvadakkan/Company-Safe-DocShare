@@ -26,7 +26,8 @@ android {
         }
         debug {
             // For local testing: update BASE_URL to your dev server
-            buildConfigField "String", "BASE_URL", '"http://10.0.2.2/safe_docshare/admin-panel/"'
+            //buildConfigField "String", "BASE_URL", '"http://10.0.2.2/safe_docshare/admin-panel/"'
+            buildConfigField "String", "BASE_URL", '"http://http://localhost:3001/"'
         }
     }
 
