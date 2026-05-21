@@ -9,7 +9,12 @@ import java.util.concurrent.TimeUnit
 
 object ApiClient {
 
-    val service: ApiService by lazy {
+    lateinit var service: ApiService
+        private set
+
+    fun init(baseUrl: String) {
+        val url = if (baseUrl.endsWith("/")) baseUrl else "$baseUrl/"
+
         val logging = HttpLoggingInterceptor().apply {
             level = if (BuildConfig.DEBUG)
                 HttpLoggingInterceptor.Level.BODY
@@ -24,8 +29,8 @@ object ApiClient {
             .addInterceptor(logging)
             .build()
 
-        Retrofit.Builder()
-            .baseUrl(BuildConfig.BASE_URL)
+        service = Retrofit.Builder()
+            .baseUrl(url)
             .client(client)
             .addConverterFactory(GsonConverterFactory.create())
             .build()

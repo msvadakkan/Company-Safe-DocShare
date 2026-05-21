@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "com.company.safedocshare.app-mergeDebugResources-38:/layout/item_pdf.xml",
+        "source": "com.company.safedocshare.app-main-41:/layout/item_pdf.xml"
+    },
+    {
+        "merged": "com.company.safedocshare.app-mergeDebugResources-38:/layout/activity_login.xml",
+        "source": "com.company.safedocshare.app-main-41:/layout/activity_login.xml"
+    },
+    {
+        "merged": "com.company.safedocshare.app-mergeDebugResources-38:/layout/activity_pdf_list.xml",
+        "source": "com.company.safedocshare.app-main-41:/layout/activity_pdf_list.xml"
+    },
+    {
+        "merged": "com.company.safedocshare.app-mergeDebugResources-38:/layout/activity_pdf_viewer.xml",
+        "source": "com.company.safedocshare.app-main-41:/layout/activity_pdf_viewer.xml"
+    }
+]

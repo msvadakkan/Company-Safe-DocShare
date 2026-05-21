@@ -7,6 +7,15 @@ android {
     namespace 'com.company.safedocshare'
     compileSdk 34
 
+    signingConfigs {
+        release {
+            storeFile file('../safedocshare.keystore')
+            storePassword 'SafeDoc@2024'
+            keyAlias 'safedocshare'
+            keyPassword 'SafeDoc@2024'
+        }
+    }
+
     defaultConfig {
         applicationId "com.company.safedocshare"
         minSdk 26
@@ -21,6 +30,7 @@ android {
 
     buildTypes {
         release {
+            signingConfig signingConfigs.release
             minifyEnabled true
             shrinkResources true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
@@ -28,7 +38,7 @@ android {
         debug {
             // For local testing: update BASE_URL to your dev server
             //buildConfigField "String", "BASE_URL", '"http://10.0.2.2/safe_docshare/admin-panel/"'
-            buildConfigField "String", "BASE_URL", '"http://http://localhost:3001/"'
+            buildConfigField "String", "BASE_URL", '"http://192.168.0.155:3001"'
         }
     }
 
@@ -63,8 +73,8 @@ dependencies {
     implementation 'com.squareup.okhttp3:logging-interceptor:4.12.0'
 
     // Secure SharedPreferences
-    implementation 'androidx.security:security-crypto:1.0.0'
+    implementation 'androidx.security:security-crypto:1.1.0-alpha06'
 
     // PDF Viewer (renders PDF as bitmaps – no text selection by design)
-    implementation 'com.github.barteksc:android-pdf-viewer:3.2.0-beta.1'
+    implementation 'com.github.barteksc:AndroidPdfViewer:3.1.0-beta.1'
 }

@@ -1,0 +1,62 @@
+[
+    {
+        "merged": "com.company.safedocshare.app-merged_res-39:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.company.safedocshare.app-main-41:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.company.safedocshare.app-merged_res-39:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.company.safedocshare.app-main-41:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.company.safedocshare.app-merged_res-39:/drawable_ic_chevron.xml.flat",
+        "source": "com.company.safedocshare.app-main-41:/drawable/ic_chevron.xml"
+    },
+    {
+        "merged": "com.company.safedocshare.app-merged_res-39:/layout_activity_pdf_viewer.xml.flat",
+        "source": "com.company.safedocshare.app-main-41:/layout/activity_pdf_viewer.xml"
+    },
+    {
+        "merged": "com.company.safedocshare.app-merged_res-39:/drawable_ic_logout.xml.flat",
+        "source": "com.company.safedocshare.app-main-41:/drawable/ic_logout.xml"
+    },
+    {
+        "merged": "com.company.safedocshare.app-merged_res-39:/drawable_ic_pdf.xml.flat",
+        "source": "com.company.safedocshare.app-main-41:/drawable/ic_pdf.xml"
+    },
+    {
+        "merged": "com.company.safedocshare.app-merged_res-39:/drawable_bg_gradient.xml.flat",
+        "source": "com.company.safedocshare.app-main-41:/drawable/bg_gradient.xml"
+    },
+    {
+        "merged": "com.company.safedocshare.app-merged_res-39:/layout_item_pdf.xml.flat",
+        "source": "com.company.safedocshare.app-main-41:/layout/item_pdf.xml"
+    },
+    {
+        "merged": "com.company.safedocshare.app-merged_res-39:/layout_activity_pdf_list.xml.flat",
+        "source": "com.company.safedocshare.app-main-41:/layout/activity_pdf_list.xml"
+    },
+    {
+        "merged": "com.company.safedocshare.app-merged_res-39:/xml_network_security_config.xml.flat",
+        "source": "com.company.safedocshare.app-main-41:/xml/network_security_config.xml"
+    },
+    {
+        "merged": "com.company.safedocshare.app-merged_res-39:/layout_activity_login.xml.flat",
+        "source": "com.company.safedocshare.app-main-41:/layout/activity_login.xml"
+    },
+    {
+        "merged": "com.company.safedocshare.app-merged_res-39:/drawable_ic_back.xml.flat",
+        "source": "com.company.safedocshare.app-main-41:/drawable/ic_back.xml"
+    },
+    {
+        "merged": "com.company.safedocshare.app-merged_res-39:/drawable_ic_search.xml.flat",
+        "source": "com.company.safedocshare.app-main-41:/drawable/ic_search.xml"
+    },
+    {
+        "merged": "com.company.safedocshare.app-merged_res-39:/drawable_ic_shield.xml.flat",
+        "source": "com.company.safedocshare.app-main-41:/drawable/ic_shield.xml"
+    },
+    {
+        "merged": "com.company.safedocshare.app-merged_res-39:/drawable_bg_pdf_icon.xml.flat",
+        "source": "com.company.safedocshare.app-main-41:/drawable/bg_pdf_icon.xml"
+    }
+]

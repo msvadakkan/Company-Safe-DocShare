@@ -18,7 +18,9 @@ class LoginActivity : SecureActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        // Skip login if already authenticated
+        ApiClient.init(PrefsManager.getServerUrl(this))
+
+        // Already have a valid session — go straight to main
         if (PrefsManager.isLoggedIn(this)) {
             startMain()
             return
@@ -27,24 +29,39 @@ class LoginActivity : SecureActivity() {
         binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        // Pre-fill saved details
+        binding.etServerUrl.setText(PrefsManager.getServerUrl(this))
+        PrefsManager.getUsername(this)?.let { binding.etUsername.setText(it) }
+        PrefsManager.getSavedPassword(this)?.let { binding.etPassword.setText(it) }
+
         binding.btnLogin.setOnClickListener { attemptLogin() }
 
-        // Allow IME Done key to trigger login
         binding.etPassword.setOnEditorActionListener { _, _, _ ->
             attemptLogin()
             true
         }
+
+        // Auto-login if all credentials are saved
+        if (PrefsManager.hasSavedCredentials(this)) {
+            attemptLogin()
+        }
     }
 
     private fun attemptLogin() {
-        val username = binding.etUsername.text?.toString()?.trim() ?: ""
-        val password = binding.etPassword.text?.toString() ?: ""
+        val serverUrl = binding.etServerUrl.text?.toString()?.trim() ?: ""
+        val username  = binding.etUsername.text?.toString()?.trim() ?: ""
+        val password  = binding.etPassword.text?.toString() ?: ""
 
+        if (serverUrl.isEmpty()) {
+            showError(getString(R.string.error_server_empty))
+            return
+        }
         if (username.isEmpty() || password.isEmpty()) {
             showError("Please enter username and password.")
             return
         }
 
+        ApiClient.init(serverUrl)
         setLoading(true)
         hideError()
 
@@ -53,15 +70,16 @@ class LoginActivity : SecureActivity() {
                 val response = ApiClient.service.login(LoginRequest(username, password))
                 if (response.isSuccessful && response.body()?.success == true) {
                     val data = response.body()!!.data!!
+                    PrefsManager.saveCredentials(this@LoginActivity, serverUrl, username, password)
                     PrefsManager.saveSession(this@LoginActivity, data.token, data.username)
                     startMain()
                 } else {
                     val msg = response.body()?.message ?: getString(R.string.error_login)
                     showError(msg)
+                    setLoading(false)
                 }
             } catch (e: Exception) {
                 showError(getString(R.string.error_network))
-            } finally {
                 setLoading(false)
             }
         }

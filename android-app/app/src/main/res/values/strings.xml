@@ -9,6 +9,9 @@
     <string name="loading">Loading…</string>
     <string name="no_documents">No documents available.</string>
     <string name="logout">Logout</string>
+    <string name="server_address">Server Address</string>
+    <string name="server_address_hint">http://192.168.x.x:3001</string>
+    <string name="error_server_empty">Please enter the server address.</string>
     <string name="error_network">Network error. Check your connection.</string>
     <string name="error_login">Invalid username or password.</string>
     <string name="loading_pdf">Loading PDF…</string>

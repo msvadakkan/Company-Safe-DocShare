@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "C:\\Users\\USER\\.gradle\\daemon\\8.6\\com.company.safedocshare.app-mergeReleaseResources-38:\\layout\\activity_login.xml",
+        "source": "C:\\Users\\USER\\.gradle\\daemon\\8.6\\com.company.safedocshare.app-main-41:\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\USER\\.gradle\\daemon\\8.6\\com.company.safedocshare.app-mergeReleaseResources-38:\\layout\\activity_pdf_list.xml",
+        "source": "C:\\Users\\USER\\.gradle\\daemon\\8.6\\com.company.safedocshare.app-main-41:\\layout\\activity_pdf_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\USER\\.gradle\\daemon\\8.6\\com.company.safedocshare.app-mergeReleaseResources-38:\\layout\\activity_pdf_viewer.xml",
+        "source": "C:\\Users\\USER\\.gradle\\daemon\\8.6\\com.company.safedocshare.app-main-41:\\layout\\activity_pdf_viewer.xml"
+    },
+    {
+        "merged": "C:\\Users\\USER\\.gradle\\daemon\\8.6\\com.company.safedocshare.app-mergeReleaseResources-38:\\layout\\item_pdf.xml",
+        "source": "C:\\Users\\USER\\.gradle\\daemon\\8.6\\com.company.safedocshare.app-main-41:\\layout\\item_pdf.xml"
+    }
+]

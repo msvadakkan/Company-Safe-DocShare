@@ -1,0 +1,43 @@
+com.company.safedocshare.app-jetified-lifecycle-viewmodel-ktx-2.7.0-0 C:\Users\USER\.gradle\caches\transforms-4\03874a55198ac2906472023ba17690df\transformed\jetified-lifecycle-viewmodel-ktx-2.7.0\res
+com.company.safedocshare.app-appcompat-1.6.1-1 C:\Users\USER\.gradle\caches\transforms-4\04b980f1254cb7db2dd2d6314bcaaa48\transformed\appcompat-1.6.1\res
+com.company.safedocshare.app-cardview-1.0.0-2 C:\Users\USER\.gradle\caches\transforms-4\070a417d856d1e1df6b1918c18f2b65b\transformed\cardview-1.0.0\res
+com.company.safedocshare.app-jetified-activity-1.8.0-3 C:\Users\USER\.gradle\caches\transforms-4\097f5c6dc3f40903d0ef99aabbabe1dc\transformed\jetified-activity-1.8.0\res
+com.company.safedocshare.app-jetified-AndroidPdfViewer-3.1.0-beta.1-4 C:\Users\USER\.gradle\caches\transforms-4\0ac239b8ac73755be8ae399b5f5d3071\transformed\jetified-AndroidPdfViewer-3.1.0-beta.1\res
+com.company.safedocshare.app-jetified-emoji2-views-helper-1.2.0-5 C:\Users\USER\.gradle\caches\transforms-4\16d347e5e9372f30bb155684f313338b\transformed\jetified-emoji2-views-helper-1.2.0\res
+com.company.safedocshare.app-jetified-startup-runtime-1.1.1-6 C:\Users\USER\.gradle\caches\transforms-4\1f3eb6c5573f533a2c72f323e3b6fc37\transformed\jetified-startup-runtime-1.1.1\res
+com.company.safedocshare.app-jetified-core-ktx-1.12.0-7 C:\Users\USER\.gradle\caches\transforms-4\2733bdd657cdbc6232d2d6be95988b9e\transformed\jetified-core-ktx-1.12.0\res
+com.company.safedocshare.app-jetified-customview-poolingcontainer-1.0.0-8 C:\Users\USER\.gradle\caches\transforms-4\2ff18e622e479bccccd436aae21272d5\transformed\jetified-customview-poolingcontainer-1.0.0\res
+com.company.safedocshare.app-jetified-viewpager2-1.1.0-beta02-9 C:\Users\USER\.gradle\caches\transforms-4\34afdb031421ee905cfa2be411d889ab\transformed\jetified-viewpager2-1.1.0-beta02\res
+com.company.safedocshare.app-swiperefreshlayout-1.1.0-10 C:\Users\USER\.gradle\caches\transforms-4\3a4a0f49b0d863a13205ec937679205d\transformed\swiperefreshlayout-1.1.0\res
+com.company.safedocshare.app-jetified-lifecycle-process-2.7.0-11 C:\Users\USER\.gradle\caches\transforms-4\3aad7b82caceb99f0a60d6cf676c3089\transformed\jetified-lifecycle-process-2.7.0\res
+com.company.safedocshare.app-lifecycle-viewmodel-2.7.0-12 C:\Users\USER\.gradle\caches\transforms-4\4c067798b116d1dca42756b34c2fa986\transformed\lifecycle-viewmodel-2.7.0\res
+com.company.safedocshare.app-jetified-annotation-experimental-1.3.0-13 C:\Users\USER\.gradle\caches\transforms-4\4d04d492c75c80f6de33dec2e129d80a\transformed\jetified-annotation-experimental-1.3.0\res
+com.company.safedocshare.app-coordinatorlayout-1.1.0-14 C:\Users\USER\.gradle\caches\transforms-4\4ec00e92be83ed569fa7f7acb9d67ce7\transformed\coordinatorlayout-1.1.0\res
+com.company.safedocshare.app-media-1.0.0-15 C:\Users\USER\.gradle\caches\transforms-4\56ce5f0dc2ef03e1428682132a852050\transformed\media-1.0.0\res
+com.company.safedocshare.app-jetified-lifecycle-livedata-core-ktx-2.7.0-16 C:\Users\USER\.gradle\caches\transforms-4\5910663dd3aeaf3b4309b1cab0204fb0\transformed\jetified-lifecycle-livedata-core-ktx-2.7.0\res
+com.company.safedocshare.app-jetified-profileinstaller-1.3.0-17 C:\Users\USER\.gradle\caches\transforms-4\757c5446af63209e6c3471240bd68c09\transformed\jetified-profileinstaller-1.3.0\res
+com.company.safedocshare.app-drawerlayout-1.1.1-18 C:\Users\USER\.gradle\caches\transforms-4\75f1d7c1fa855c3e6f9373470c869021\transformed\drawerlayout-1.1.1\res
+com.company.safedocshare.app-transition-1.2.0-19 C:\Users\USER\.gradle\caches\transforms-4\7988482ec1176f03c0f8731f45d8d2a7\transformed\transition-1.2.0\res
+com.company.safedocshare.app-lifecycle-livedata-2.7.0-20 C:\Users\USER\.gradle\caches\transforms-4\8114781622a086bf4640e112fe5c11d1\transformed\lifecycle-livedata-2.7.0\res
+com.company.safedocshare.app-constraintlayout-2.1.4-21 C:\Users\USER\.gradle\caches\transforms-4\86bfb9c6cbf6dcc0f919c8a4c2bdee9a\transformed\constraintlayout-2.1.4\res
+com.company.safedocshare.app-jetified-lifecycle-viewmodel-savedstate-2.7.0-22 C:\Users\USER\.gradle\caches\transforms-4\8bd7d4e7b78fd0d91ac23f7622757ecb\transformed\jetified-lifecycle-viewmodel-savedstate-2.7.0\res
+com.company.safedocshare.app-recyclerview-1.3.2-23 C:\Users\USER\.gradle\caches\transforms-4\8f69106836313605a6fb73f412bbb648\transformed\recyclerview-1.3.2\res
+com.company.safedocshare.app-jetified-appcompat-resources-1.6.1-24 C:\Users\USER\.gradle\caches\transforms-4\ab1a703d392da57b8884fa2f38cd6367\transformed\jetified-appcompat-resources-1.6.1\res
+com.company.safedocshare.app-jetified-lifecycle-runtime-ktx-2.7.0-25 C:\Users\USER\.gradle\caches\transforms-4\ad010972fd465faa67aab6d29ae746fa\transformed\jetified-lifecycle-runtime-ktx-2.7.0\res
+com.company.safedocshare.app-jetified-savedstate-1.2.1-26 C:\Users\USER\.gradle\caches\transforms-4\adb8a9613ac9a1cdd7a4ff02ef03c85d\transformed\jetified-savedstate-1.2.1\res
+com.company.safedocshare.app-jetified-security-crypto-1.1.0-alpha06-27 C:\Users\USER\.gradle\caches\transforms-4\bcc4afcf841f6871edd990b5d5cb4705\transformed\jetified-security-crypto-1.1.0-alpha06\res
+com.company.safedocshare.app-fragment-1.3.6-28 C:\Users\USER\.gradle\caches\transforms-4\bfcef85b21341bb92958a54034d168b7\transformed\fragment-1.3.6\res
+com.company.safedocshare.app-core-runtime-2.2.0-29 C:\Users\USER\.gradle\caches\transforms-4\c91e80576179a6a4ae95983ec3843c93\transformed\core-runtime-2.2.0\res
+com.company.safedocshare.app-jetified-emoji2-1.2.0-30 C:\Users\USER\.gradle\caches\transforms-4\deb71f8db52050b63aa6c739f258946b\transformed\jetified-emoji2-1.2.0\res
+com.company.safedocshare.app-lifecycle-runtime-2.7.0-31 C:\Users\USER\.gradle\caches\transforms-4\eb1a178e961017315b0d0ed01920a494\transformed\lifecycle-runtime-2.7.0\res
+com.company.safedocshare.app-lifecycle-livedata-core-2.7.0-32 C:\Users\USER\.gradle\caches\transforms-4\edf4a6e04ad464e246f1e2a28a0d0dd2\transformed\lifecycle-livedata-core-2.7.0\res
+com.company.safedocshare.app-material-1.11.0-33 C:\Users\USER\.gradle\caches\transforms-4\f04cd6244f4b9203b834102570208274\transformed\material-1.11.0\res
+com.company.safedocshare.app-core-1.12.0-34 C:\Users\USER\.gradle\caches\transforms-4\f41efb211daceaa856bafe06654da2ba\transformed\core-1.12.0\res
+com.company.safedocshare.app-pngs-35 C:\Users\USER\Documents\Projects\Company Safe DocShare\android-app\app\build\generated\res\pngs\release
+com.company.safedocshare.app-resValues-36 C:\Users\USER\Documents\Projects\Company Safe DocShare\android-app\app\build\generated\res\resValues\release
+com.company.safedocshare.app-packageReleaseResources-37 C:\Users\USER\Documents\Projects\Company Safe DocShare\android-app\app\build\intermediates\incremental\release\packageReleaseResources\merged.dir
+com.company.safedocshare.app-packageReleaseResources-38 C:\Users\USER\Documents\Projects\Company Safe DocShare\android-app\app\build\intermediates\incremental\release\packageReleaseResources\stripped.dir
+com.company.safedocshare.app-merged-not-compiled-resources-39 C:\Users\USER\Documents\Projects\Company Safe DocShare\android-app\app\build\intermediates\merged-not-compiled-resources\release
+com.company.safedocshare.app-merged_res-40 C:\Users\USER\Documents\Projects\Company Safe DocShare\android-app\app\build\intermediates\merged_res\release
+com.company.safedocshare.app-main-41 C:\Users\USER\Documents\Projects\Company Safe DocShare\android-app\app\src\main\res
+com.company.safedocshare.app-release-42 C:\Users\USER\Documents\Projects\Company Safe DocShare\android-app\app\src\release\res

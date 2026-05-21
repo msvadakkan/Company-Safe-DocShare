@@ -3,12 +3,16 @@ package com.company.safedocshare.utils
 import android.content.Context
 import androidx.security.crypto.EncryptedSharedPreferences
 import androidx.security.crypto.MasterKey
+import com.company.safedocshare.BuildConfig
 
 object PrefsManager {
 
-    private const val PREFS_FILE = "safe_doc_prefs"
-    private const val KEY_TOKEN    = "token"
-    private const val KEY_USERNAME = "username"
+    private const val PREFS_FILE     = "safe_doc_prefs"
+    private const val SETTINGS_FILE  = "safe_doc_settings"
+    private const val KEY_TOKEN      = "token"
+    private const val KEY_USERNAME   = "username"
+    private const val KEY_PASSWORD   = "password"
+    private const val KEY_SERVER_URL = "server_url"
 
     private fun prefs(ctx: Context) = EncryptedSharedPreferences.create(
         ctx,
@@ -18,6 +22,9 @@ object PrefsManager {
         EncryptedSharedPreferences.PrefValueEncryptionScheme.AES256_GCM
     )
 
+    private fun settings(ctx: Context) =
+        ctx.getSharedPreferences(SETTINGS_FILE, Context.MODE_PRIVATE)
+
     fun saveSession(ctx: Context, token: String, username: String) {
         prefs(ctx).edit()
             .putString(KEY_TOKEN, token)
@@ -25,13 +32,36 @@ object PrefsManager {
             .apply()
     }
 
+    fun saveCredentials(ctx: Context, serverUrl: String, username: String, password: String) {
+        prefs(ctx).edit()
+            .putString(KEY_USERNAME, username)
+            .putString(KEY_PASSWORD, password)
+            .apply()
+        settings(ctx).edit().putString(KEY_SERVER_URL, serverUrl).apply()
+    }
+
     fun getToken(ctx: Context): String? = prefs(ctx).getString(KEY_TOKEN, null)
 
     fun getUsername(ctx: Context): String? = prefs(ctx).getString(KEY_USERNAME, null)
+
+    fun getSavedPassword(ctx: Context): String? = prefs(ctx).getString(KEY_PASSWORD, null)
+
+    fun hasSavedCredentials(ctx: Context): Boolean {
+        val p = prefs(ctx)
+        return !p.getString(KEY_USERNAME, null).isNullOrBlank() &&
+               !p.getString(KEY_PASSWORD, null).isNullOrBlank()
+    }
 
     fun isLoggedIn(ctx: Context): Boolean = !getToken(ctx).isNullOrBlank()
 
     fun clearSession(ctx: Context) {
         prefs(ctx).edit().clear().apply()
     }
+
+    fun saveServerUrl(ctx: Context, url: String) {
+        settings(ctx).edit().putString(KEY_SERVER_URL, url).apply()
+    }
+
+    fun getServerUrl(ctx: Context): String =
+        settings(ctx).getString(KEY_SERVER_URL, BuildConfig.BASE_URL) ?: BuildConfig.BASE_URL
 }
