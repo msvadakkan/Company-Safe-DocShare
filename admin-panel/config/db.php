@@ -2,7 +2,7 @@
 define('DB_HOST', 'localhost');
 define('DB_USER', 'root');
 define('DB_PASS', '');
-define('DB_NAME', 'safe_docshare');
+define('DB_NAME', 'novatech_DocShare');
 define('UPLOAD_PATH', dirname(__DIR__) . DIRECTORY_SEPARATOR . 'uploads' . DIRECTORY_SEPARATOR);
 define('APP_SECRET', 'CHANGE_THIS_TO_A_LONG_RANDOM_STRING_IN_PRODUCTION');
 define('TOKEN_EXPIRY_HOURS', 24);

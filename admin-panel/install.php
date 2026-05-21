@@ -13,7 +13,7 @@ if ($step === 'install') {
     $host = trim($_POST['db_host'] ?? 'localhost');
     $user = trim($_POST['db_user'] ?? '');
     $pass = $_POST['db_pass'] ?? '';
-    $name = trim($_POST['db_name'] ?? 'safe_docshare');
+    $name = trim($_POST['db_name'] ?? '');
     $admin_user = trim($_POST['admin_user'] ?? '');
     $admin_pass = $_POST['admin_pass'] ?? '';
 
@@ -26,14 +26,22 @@ if ($step === 'install') {
         if ($conn->connect_error) {
             $error = 'Cannot connect to MySQL: ' . $conn->connect_error;
         } else {
-            $sql = file_get_contents(__DIR__ . '/setup.sql');
-            // Replace DB name if custom
-            $sql = str_replace('safe_docshare', $conn->real_escape_string($name), $sql);
+            // Try to create the database — silently skip if it already exists
+            // or if the hosting provider pre-created it (shared hosting)
+            $safeName = '`' . str_replace('`', '``', $name) . '`';
+            $conn->query("CREATE DATABASE IF NOT EXISTS $safeName CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci");
 
+            if (!$conn->select_db($name)) {
+                $error = 'Cannot select database "' . htmlspecialchars($name) . '". '
+                       . 'On shared hosting the database must already exist. Error: ' . $conn->error;
+            }
+        }
+
+        if (!$error) {
+            // Run table creation SQL (no hardcoded DB name inside)
+            $sql = file_get_contents(__DIR__ . '/setup.sql');
             $conn->multi_query($sql);
             while ($conn->next_result()) { /* flush */ }
-
-            $conn->select_db($name);
 
             // Write config
             $configContent = "<?php\n"
@@ -112,7 +120,7 @@ if ($step === 'install') {
         <label>MySQL Password</label>
         <input type="password" name="db_pass" placeholder="(leave blank if none)">
         <label>Database Name</label>
-        <input type="text" name="db_name" value="safe_docshare" required>
+        <input type="text" name="db_name" placeholder="e.g. novatech_DocShare" required>
         <hr>
         <h3>Initial Admin Account</h3>
         <label>Admin Username</label>
