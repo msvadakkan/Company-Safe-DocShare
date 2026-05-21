@@ -1768,7 +1768,6 @@ android.speech.extra.LANGUAGE_MODEL
 scheme
 %02d
 USAGE_NOTIFICATION_COMMUNICATION_INSTANT
-http://192.168.0.155:3001
 ImageButton
 TLSv1
 StateSet

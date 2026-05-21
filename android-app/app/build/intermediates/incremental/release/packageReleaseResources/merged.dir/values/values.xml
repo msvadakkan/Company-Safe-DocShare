@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="accent">#42A5F5</color>
+    <color name="background">#F0F2F5</color>
+    <color name="divider">#E0E0E0</color>
+    <color name="error">#C62828</color>
+    <color name="primary">#1565C0</color>
+    <color name="primary_dark">#0D47A1</color>
+    <color name="primary_light">#E3F2FD</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#757575</color>
+    <color name="toolbar_text">#FFFFFF</color>
+    <dimen name="card_elevation">2dp</dimen>
+    <dimen name="card_radius">10dp</dimen>
+    <dimen name="input_height">52dp</dimen>
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="margin_standard">16dp</dimen>
+    <string name="app_name">SafeDocShare</string>
+    <string name="documents">Documents</string>
+    <string name="error_login">Invalid username or password.</string>
+    <string name="error_network">Network error. Check your connection.</string>
+    <string name="error_pdf">Failed to load PDF.</string>
+    <string name="error_server_empty">Please enter the server address.</string>
+    <string name="loading">Loading…</string>
+    <string name="loading_pdf">Loading PDF…</string>
+    <string name="login">Login</string>
+    <string name="logout">Logout</string>
+    <string name="no_documents">No documents available.</string>
+    <string name="password">Password</string>
+    <string name="screenshot_disabled">Screenshots are disabled for security.</string>
+    <string name="search_documents">Search documents…</string>
+    <string name="server_address">Server Address</string>
+    <string name="server_address_hint">https://yourdomain.com/docshare</string>
+    <string name="sign_in">Sign In</string>
+    <string name="username">Username</string>
+    <style name="Theme.SafeDocShare" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primary_dark</item>
+        <item name="colorOnPrimary">@color/toolbar_text</item>
+        <item name="colorSecondary">@color/accent</item>
+        <item name="android:colorBackground">@color/background</item>
+        <item name="android:statusBarColor">@color/primary_dark</item>
+        <item name="android:windowBackground">@color/background</item>
+    </style>
+    <style name="Theme.SafeDocShare.Toolbar">
+        <item name="android:background">@color/primary</item>
+        <item name="titleTextColor">@color/toolbar_text</item>
+    </style>
+</resources>

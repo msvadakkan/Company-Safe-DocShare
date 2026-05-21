@@ -31,7 +31,7 @@
     <string name="screenshot_disabled">Screenshots are disabled for security.</string>
     <string name="search_documents">Search documents…</string>
     <string name="server_address">Server Address</string>
-    <string name="server_address_hint">http://192.168.x.x:3001</string>
+    <string name="server_address_hint">https://yourdomain.com/docshare</string>
     <string name="sign_in">Sign In</string>
     <string name="username">Username</string>
     <style name="Theme.SafeDocShare" parent="Theme.MaterialComponents.Light.NoActionBar">
