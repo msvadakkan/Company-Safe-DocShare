@@ -15,7 +15,8 @@ android {
         versionName "1.0"
 
         // Change this to your server's base URL (include trailing slash)
-        buildConfigField "String", "BASE_URL", '"http://YOUR_SERVER_IP/safe_docshare/admin-panel/"'
+        //buildConfigField "String", "BASE_URL", '"http://YOUR_SERVER_IP/safe_docshare/admin-panel/"'
+        buildConfigField "String", "BASE_URL", '"http://192.168.0.155:3001"'
     }
 
     buildTypes {
