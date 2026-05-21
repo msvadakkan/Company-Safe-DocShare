@@ -21,8 +21,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action'])) {
         if ($row) {
             $file = UPLOAD_PATH . $row['stored_name'];
             if (file_exists($file)) unlink($file);
-            $db->prepare("DELETE FROM pdfs WHERE id = ?")->bind_param('i', $id) && true;
-            $db->query("DELETE FROM pdfs WHERE id = $id");
+            $del = $db->prepare("DELETE FROM pdfs WHERE id = ?");
+            $del->bind_param('i', $id);
+            $del->execute();
             echo json_encode(['success' => true]);
         } else {
             echo json_encode(['success' => false, 'message' => 'Not found.']);

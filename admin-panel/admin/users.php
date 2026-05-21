@@ -57,9 +57,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $hash = password_hash($password, PASSWORD_BCRYPT);
         $stmt = $db->prepare("UPDATE users SET password_hash = ? WHERE id = ?");
         $stmt->bind_param('si', $hash, $id);
+        $stmt->execute();
         // Invalidate all tokens for this user
-        $db->prepare("DELETE FROM user_tokens WHERE user_id = ?")->bind_param('i', $id) && true;
-        echo json_encode(['success' => $stmt->execute()]);
+        $del = $db->prepare("DELETE FROM user_tokens WHERE user_id = ?");
+        $del->bind_param('i', $id);
+        $del->execute();
+        echo json_encode(['success' => $stmt->affected_rows > 0]);
         exit;
     }
 

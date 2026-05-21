@@ -50,3 +50,19 @@ if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
     http_response_code(204);
     exit;
 }
+
+// getallheaders() is unavailable on some PHP-FPM / nginx setups
+if (!function_exists('getallheaders')) {
+    function getallheaders(): array {
+        $headers = [];
+        foreach ($_SERVER as $key => $value) {
+            if (str_starts_with($key, 'HTTP_')) {
+                $name = str_replace('_', '-', substr($key, 5));
+                $headers[$name] = $value;
+            } elseif (in_array($key, ['CONTENT_TYPE', 'CONTENT_LENGTH'], true)) {
+                $headers[str_replace('_', '-', $key)] = $value;
+            }
+        }
+        return $headers;
+    }
+}
